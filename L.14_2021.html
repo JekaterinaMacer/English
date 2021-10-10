@@ -1,0 +1,56 @@
+
+<script>
+
+name=prompt("Please, enter your name");
+alert("Hello, "+ name+"!\nNice to see you!\nBefore we start our lesson, please answer several questions: ");
+
+function askQuestion(question, answers) {
+	var userAnswer = prompt(question);
+	userAnswer = userAnswer.toLowerCase();
+	for (var i=0; i<answers.length; i++){
+		if (userAnswer == answers[i]){
+			alert(name+", that's right. Awesome! Great job! ");
+			score++;
+			return; }
+		alert("Unfortunately no.\nThe answer for the question is " + answers[i]);
+	}
+}
+	var score = 0;
+
+	askQuestion("How will you say 'very small' in good English?", ["tiny"])
+	askQuestion("How will you say 'very hot' in good English?", ["boiling", "roasting"])
+	askQuestion("How will you say 'very hungry' in good English?", ["starving", "famished"])
+	askQuestion("How will you say 'very tired' in good English?", ["exhausted", "wrecked"])
+	askQuestion("How will you say 'very important' in good English?", ["essential", "vital"])
+	askQuestion("How will you say 'very sad' in good English?" , ["miserable"])
+	askQuestion("How will you say 'very unusual' in good English?" , ["extraordinary"])
+	askQuestion("How will you say 'very funny' in good English?" , ["hilarious"])
+	askQuestion("How will you say 'very happy' in good English?" , ["delighted"])
+
+
+	alert(name+", thank you for the game. \nYou have given "+score+" correct answers.\nAnd now, Let's start the Lesson!");
+
+	document.write("<strong>Lesson_14  01.01.21</strong><br><br>");
+	
+	document.write("<em>Grammar time</em><br>");
+
+	document.write("L.14_FOR_SINCE<br>L.14_PastSimple_PastContinious<br><br>");
+
+	document.write("<em>Vocabulary</em><br>");
+	
+	document.write("L.14_not-very-extremely<br>L.14_when-pigs-fly<br>L.14_worksheet-gradable-nongradable-grammar<br><br>");
+
+	document.write("<em>Game</em><br><br>");
+
+	document.write("<em>Let’s repeat the previous lesson</em><br><br>");
+
+</script>
+
+Can you tell me something about yourself?<br>
+Why did you apply for this job?<br>
+Why did you leave your last job?<br>
+Can you tell me something about your education?<br>
+Can you tell us something about your working experience?<br>
+Why should we hire you (and not someone else)?<br>
+
+
